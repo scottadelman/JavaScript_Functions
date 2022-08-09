@@ -1,8 +1,12 @@
+console.log("Hello World!\n==========\n");
+
 // Exercise 1 Section
 console.log("EXERCISE 1:\n==========\n");
 
+
+
 function printOdds(count) {
-    var count = prompt("What is your number?");
+    var count = prompt("What is you number?")
     if (count < 0) count = count * -1;
     for (let i = 0; i <= count; i++) {
       if (i % 2 != 0) {
@@ -10,13 +14,13 @@ function printOdds(count) {
       }
     }
   }
-
+  console.log(printOdds()); 
 
 // Exercise 2 Section
 console.log("EXERCISE 2:\n==========\n");
 
 function checkAge(age) {
-    var age = prompt("How old are you?");
+    var age = prompt("What is your age?")
     const aboveSixteen = "You can drive!";
     const belowSixteen = "Sorry, you aint drivin son";
     if (age >= 16) {
@@ -26,53 +30,62 @@ function checkAge(age) {
     }
   }
 
+  console.log(checkAge());
 
 // Exercise 3 Section
-console.log("EXERCISE 3:\n==========\n");
+console.log("EXERCISE 2:\n==========\n");
+
 function checkPlane(x, y) {
+    var x = prompt("What is your x-coordinate?")
+    var y = prompt("What is your y-coordinate?")
+
     if(x == 0 && y == 0){
-        console.log("You are at the origin")
+        console.log("You are at the origin");
     }
     if(x == 0 && y != 0){
-        console.log("You are on the x-axis")
+        console.log("You are on the x-axis");
     }
     if(x != 0 && y == 0){
-        console.log("You are on the y-axis")
+        console.log("You are on the y-axis");
     }
     if(x > 0 && y > 0){
-        console.log("You are in Quadrant 1")
+        console.log("You are in Quadrant 1");
     }
     if(x < 0 && y > 0){
-        console.log("You are in Quadrant 2")
+        console.log("You are in Quadrant 2");
     }
     if(x < 0 && y < 0){
-        console.log("You are in Quadrant 3")
+        console.log("You are in Quadrant 3");
     }
     if(x > 0 && y < 0){
-        console.log("You are in Quadrant 4")
+        console.log("You are in Quadrant 4");
     }
 }
-
+console.log(checkPlane());
 // Exercise 4 Section
-console.log("EXERCISE 4:\n==========\n");
-function checkTriangle(x, y, z){
-    console.log("Give me 3 numbers (a,b,c) for the sides of your triangle!");
-    var a = prompt("Give me side A!");
-    var b = prompt("Give me side B!");
-    var c = prompt("Give me side C!");
-    if(a != b && b != c && a != c ){
-        console.log("Scalene Triangle");
+console.log("EXERCISE 2:\n==========\n");
+
+function triangleType(a, b, c) {
+
+    var a = prompt("Enter in the first side of your traingle.")
+    var b = prompt("Enter in the second side of your traingle.")
+    var c = prompt("Enter in the third side of your traingle.")
+
+    if( a != b &&  b != c && a !=c){
+        console.log("Scalene triangle");
     }
-    if(a == b && a == c && b == c){
+    if(a == b == c){
         console.log("Equilateral Triangle");
     }
     if(a == b && b != c){
-        console.log("Isosceles triangle");
+        console.log("Isosceles Trianlge");
     }
-    if( a == c && c != b){
-        console.log("Isosceles triangle");
+    if(a == c && c != b){
+        console.log("Isosceles Trianlge") ;
     }
-    if(b == c && c != a){
-        console.log("Isosceles triangle");
+    if(b == c && c!= a){
+        console.log("Isosceles Traingle");
     }
 }
+
+console.log(triangleType());
